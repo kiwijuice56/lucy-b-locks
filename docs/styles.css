@@ -1,0 +1,212 @@
+/* general */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Indie Flower", cursive;
+	background-color: #f5d4f6;
+	color: #82708e;
+
+	opacity: 0;
+    transition: opacity 0.5s;
+}
+
+a {
+	color: #6e5d6c;
+}
+
+#canvasHolder {
+	position: fixed;
+	z-index: -1;
+	height: 100%;
+}
+
+.sectionTitle {
+	font-size: 2em;
+	text-align: center;
+	padding-top: 2.2em;
+	padding-bottom: 0.1em;
+}
+
+/* nav bar */
+
+nav {
+	position: fixed;
+	text-align: right;
+	width: 100%;
+	background-color: #fbdefceb;
+	z-index: 1;
+	filter: drop-shadow(0px 2px 1px #0000001b);
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	padding: 1em 1.5em;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+}
+
+/* home page */
+
+#developerName {
+	font-size: 6em;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	line-height: 1.25em;
+	text-align: left;
+	color: #6f5c75;
+}
+
+#home {
+	margin: auto;
+
+	max-width: fit-content;
+	height: 100vh;
+	width: 60vw;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#social {
+    list-style-type: none;
+    display: flex;
+	padding-top: 2em;
+}
+
+#social a {
+	display: inline-block;
+	color: #5F514F;
+}
+
+#social img {
+	width: 1.8em;
+	padding-right: 0.3em;
+}
+
+/* projects */
+
+.projectGrid {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.projectBlock a:link {
+	text-decoration: none;
+}
+
+.projectBlock {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	background-color: rgb(251, 237, 250);
+	border-radius: 0.7em;
+}
+
+.projectDescription, .projectThumbnail {
+	padding: 0.6em;
+}
+
+.projectHeader {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: center;
+	background-color: #9b7ea1;
+	border-radius: 0.7em 0.7em 0 0;
+}
+
+.projectTitle a {
+	color: white;
+}
+
+.projectTitle {
+	font-size: 1.7em;
+	line-height: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.1em;
+}
+
+.projectTag {
+	margin-bottom: 0.1em;
+	color: rgba(255, 255, 255, 1.0);
+}
+
+.projectBlock img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.3em;
+	filter: drop-shadow(1px 1px 2px #00000035);
+}
+
+/* footer */
+
+footer p {
+	text-align: center;
+	padding: 3em 0em 2em 0em;
+}
+
+/* fade-in */
+
+.fadeIn {
+	opacity: 0;
+	transform: translateY(4vh);
+	visibility: hidden;
+	transition: opacity 0.4s ease-out, transform 0.2s ease-out;
+	will-change: opacity, visibility;
+}
+
+.fadeIn.onScreen {
+	opacity: 1;
+	transform: none;
+	visibility: visible;
+}
+
+.fadeInStill {
+	opacity: 0;
+	transition: opacity 0.4s ease-out;
+	will-change: opacity, visibility;
+}
+
+.fadeInStill.onScreen {
+	opacity: 1;
+}
+
+.fadeInStill.offScreen {
+	opacity: 0;
+}
+
+/* mobile */
+
+@media(max-width: 920px) {
+	#home {
+		width: 70vw;
+	}
+
+	#developerName {
+		font-size: 5em;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.projectGrid {
+		grid-template-columns: 1fr;
+	}
+}
