@@ -45,7 +45,7 @@ vec3 mandelbrot(vec2 uv) {
     float xtemp;
     int iter = 0;
  
-    for (int i = 0; i < 256; i++) {
+    for (int i = 0; i < 16; i++) {
         xtemp = x*x - y*y + mouse_pos.x;
         y     = 2.0*x*y  + mouse_pos.y;
         x     = xtemp;
@@ -53,7 +53,7 @@ vec3 mandelbrot(vec2 uv) {
         if (x*x + y*y > 4.0) break;
     }
  
-    if (iter == 256) return col_c;
+    if (iter == 16) return col_c;
  
     for (int extra = 0; extra < 4; extra++) {
         xtemp = x*x - y*y + mouse_pos.x;
@@ -63,7 +63,7 @@ vec3 mandelbrot(vec2 uv) {
     }
  
     float modulus = sqrt(x*x + y*y);
-    float mu = max(0.0, (float(iter) - log(log(modulus)) / log(2.0))) / 256.0;
+    float mu = max(0.0, (float(iter) - log(log(modulus)) / log(2.0))) / 16.0;
     mu = sqrt(mu);
     return color_cell(mu, uv);
 }
