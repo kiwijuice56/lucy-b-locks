@@ -12,23 +12,24 @@
 		<link rel=canonical href="https://lucyblocks.com/"/>
     </head>
     <body onload="document.body.style.opacity='1'">
-		<div id="canvasHolder"><canvas id="canvas"></canvas></div>
+		<div id="canvasHolder"><canvas id="fractalCanvas"></canvas></div>
+		
 		<a id="top"></a>
 
 		<nav id="navBar" class="fadeInStill">
 			<ul>
-				<li><a href="#aboutMe">about me</a></li>
-				<li><a href="#games">games</a></li>
-				<li><a href="#research">research</a></li>
+				<li><a href="#aboutMe">About me</a></li>
+				<li><a href="#games">Games</a></li>
+				<li><a href="#research">Research</a></li>
 
 			</ul>
 		</nav>
 
 		<main>
 			<section id="home">
-				<h2 class="subTitle">hi, I'm</h2>
-				<h1 id="developerName">lucy b. locks</h1>
-				<h2 class="subTitle">game dev and researcher </h2>
+				<h2 class="subTitle">Hi, I'm</h2>
+				<h1 id="developerName">Lucy B. Locks</h1>
+				<h2 class="subTitle">Game dev and researcher </h2>
 				<ul id="social">
 					<li><a target="_blank" href="https://github.com/kiwijuice56"><img alt="Clickable link to my Github profile" src="./images/icons/github.png"/></a></li>
 					<li><a target="_blank" href="https://kiwijuice56.itch.io/"><img alt="Clickable link to my Itch.io profile" src="./images/icons/itchio.png"/></a></li>
@@ -48,10 +49,10 @@
 							<p class="projectTag">MIT Manolis Kellis Lab (2024)</p>
 						</section>
 						<section class="projectDescription">
-							<p>An interactive visualization of protein structure and behavior based on AlphaFold embeddings. </p>
+							<p>An interactive visualization of biological protein structure and behavior using machine learning. </p>
 						</section>
 						<section class="projectThumbnail">
-							<a href="https://kiwijuice56.github.io/protein-visualizer/"><img src="./images/protein_visualizer_screenshot.png" alt="Screenshot of the protein visualizer rendering a detailed and colorful protein structure"/></a>
+							<a href="https://kiwijuice56.github.io/protein-visualizer/"><img src="./images/protein_visualizer_screenshot.webp" alt="Screenshot of the protein visualizer rendering a detailed and colorful protein structure"/></a>
 						</section>
 					</section>
 
@@ -70,14 +71,14 @@
 
 					<section class="projectBlock">
 						<section class="projectHeader">
-							<h3 class="projectTitle"><a href="">GD Fractals</a></h3>
+							<h3 class="projectTitle"><a href="https://github.com/kiwijuice56/gd-fractals/">GD Fractals</a></h3>
 							<p class="projectTag">MIT Computer Graphics Final Project (2025)</p>
 						</section>
 						<section class="projectDescription">
-							<p>A Godot add-on to seamlessly render 3D fractals based on user-designed shapes. </p>
+							<p>A Godot add-on that seamlessly renders 3D fractals based on user-designed shapes. </p>
 						</section>
 						<section class="projectThumbnail">
-							<a href=""><img src="./images/brain_mandelbulb_screenshot.webp" alt="Screenshot of the Brain Mandelbulb reacting to EEG data"/></a>
+							<a href="https://github.com/kiwijuice56/gd-fractals/"><img src="./images/gd_fractals.webp" alt="Screenshot of the 3D fractals rendered in Godot"/></a>
 						</section>
 					</section>
 
@@ -100,7 +101,8 @@
 				<p>© 2026 Lucy B. Locks | Icons by <a href="https://www.icons8.com">Icons8</a></p>
 			</footer>
 		</main>
-		<script src="script.js"></script>
+		<script src="navReveal.js"></script>
+		<script src="fractal.js"></script>
     </body>
 </html>
 
