@@ -10,18 +10,15 @@
 		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css">
 		<link rel=canonical href="https://lucyblocks.com/"/>
+		<link rel="icon" href="images/favicon.png" type="image/x-icon">
     </head>
     <body onload="document.body.style.opacity='1'">
 		<div id="canvasHolder"><canvas id="fractalCanvas"></canvas></div>
-		
-		<a id="top"></a>
-
 		<nav id="navBar" class="fadeInStill">
 			<ul>
 				<li><a href="#aboutMe">About me</a></li>
 				<li><a href="#games">Games</a></li>
 				<li><a href="#research">Research</a></li>
-
 			</ul>
 		</nav>
 
@@ -33,14 +30,22 @@
 				<ul id="social">
 					<li><a target="_blank" href="https://github.com/kiwijuice56"><img alt="Clickable link to my Github profile" src="./images/icons/github.png"/></a></li>
 					<li><a target="_blank" href="https://kiwijuice56.itch.io/"><img alt="Clickable link to my Itch.io profile" src="./images/icons/itchio.png"/></a></li>
+					<li><a target="_blank" href="https://discord.gg/lucidblocks"><img alt="Clickable link to my Discord server" src="./images/icons/discord.png"/></a></li>
 					<li><a target="_blank" href="https://bsky.app/profile/lucyblocks.com"><img alt="Clickable link to my Bluesky profile" src="./images/icons/bluesky.png"/></a></li>
 					<li><a target="_blank" href="https://www.youtube.com/channel/lucy_b_locks"><img alt="Clickable link to my Youtube channel" src="./images/icons/youtube.png"/></a></li>
 					<li><a target="_blank" href="https://www.instagram.com/lucy.b.locks/"><img alt="Clickable link to my Instagram page" src="./images/icons/instagram.png"/></a></li>
 				</ul>
 			</section>
 
+			<section id="aboutMe">
+				<h2 class="sectionTitle">About me</h2>
+				<p>I'm a computer science student @ MIT. I like to make psychedellic games with lots of fractals. My academic research focuses on accessible software that helps people understand their mental and physical health.</p>
+
+				<p>My favorite things include: paleontology, history of religion, cooking, music production, digital art, JRPGs, and programming.</p>
+			</section>
+
 			<section id="games">
-				<h2 class="sectionTitle">games</h2>
+				<h2 class="sectionTitle">Games</h2>
 
 				<section class="projectGrid">
 					<section class="projectBlock fadeIn">
@@ -81,36 +86,36 @@
 							<a href="https://kiwijuice56.itch.io/void-fish"><img src="./images/void_fish_gameplay.webp" alt="A video of Void Fish gameplay"/></a>
 						</section>
 					</section>
+
+					<section class="projectBlock fadeIn">
+						<section class="projectHeader">
+							<h3 class="projectTitle"><a href="https://play.google.com/store/apps/details?id=org.godotengine.sandslide">Sand Slide</a></h3>
+							<p class="projectTag">Published on Google Play Store (2023)</p>
+						</section>
+						<section class="projectDescription">
+							<p>A dynamic and physics-based sandbox game with 100+ elements and a custom element editor. </p>
+						</section>
+						<section class="projectThumbnail">
+							<a href="https://play.google.com/store/apps/details?id=org.godotengine.sandslide"><img src="./images/sandslide_gameplay.webp" alt="A video of Sand Slide gameplay"/></a>
+						</section>
+					</section>
 				</section>
 			</section>
 
 			<section id="research">
-				<h2 class="sectionTitle">research</h2>
+				<h2 class="sectionTitle">Research</h2>
 
 				<section class="projectGrid">
 					<section class="projectBlock fadeIn">
 						<section class="projectHeader">
-							<h3 class="projectTitle"><a href="https://kiwijuice56.github.io/protein-visualizer/">Protein Visualizer</a></h3>
-							<p class="projectTag">MIT Manolis Kellis Lab (2024)</p>
+							<h3 class="projectTitle"><a href="">Brain Health Screener</a></h3>
+							<p class="projectTag">MIT Mobile Technology Lab (2026)</p>
 						</section>
 						<section class="projectDescription">
-							<p>An interactive visualization of biological protein structure and behavior using machine learning. </p>
+							<p>An app that uses consumer EEG and fNIRS wearables to make cognitive impairment screening more accessible. </p>
 						</section>
 						<section class="projectThumbnail">
-							<a href="https://kiwijuice56.github.io/protein-visualizer/"><img src="./images/protein_visualizer_screenshot.webp" alt="Screenshot of the protein visualizer rendering a detailed and colorful protein structure"/></a>
-						</section>
-					</section>
-
-					<section class="projectBlock fadeIn">
-						<section class="projectHeader">
-							<h3 class="projectTitle"><a href="https://github.com/kiwijuice56/gd-mobile-physiology">GD Mobile Physiology</a></h3>
-							<p class="projectTag">MIT Mobile Technology Lab (2024)</p>
-						</section>
-						<section class="projectDescription">
-							<p>A library that uses smartphone sensors to measure heart and breathing rate. Used in <u><a href="https://play.google.com/store/apps/details?id=com.mobiletechnologylab.harmonic_resonance&hl=en_US">Nāda</a></u>, a user-friendly meditation app with biofeedback. </p>
-						</section>
-						<section class="projectThumbnail">
-							<a href="https://github.com/kiwijuice56/gd-mobile-physiology"><img class="thumbnail" src="./images/gd_mobile_physiology_screenshot.webp" alt="Screenshot of physiological signals and a singing bowl app using this library"/></a>
+							<a href=""><img src="./images/brain_mandelbulb_screenshot.webp" alt="Screenshot of the Brain Mandelbulb reacting to EEG data"/></a>
 						</section>
 					</section>
 
@@ -129,14 +134,27 @@
 
 					<section class="projectBlock fadeIn">
 						<section class="projectHeader">
-							<h3 class="projectTitle"><a href="">Brain Health Screener</a></h3>
-							<p class="projectTag">MIT Mobile Technology Lab (2026)</p>
+							<h3 class="projectTitle"><a href="https://github.com/kiwijuice56/gd-mobile-physiology">GD Mobile Physiology</a></h3>
+							<p class="projectTag">MIT Mobile Technology Lab (2024)</p>
 						</section>
 						<section class="projectDescription">
-							<p>An app that uses consumer EEG and fNIRS wearables to make cognitive impairment screening more accessible. </p>
+							<p>A library that uses smartphone sensors to measure heart and breathing rate. Used in <u><a href="https://play.google.com/store/apps/details?id=com.mobiletechnologylab.harmonic_resonance&hl=en_US">Nāda</a></u>, a user-friendly meditation app with biofeedback. </p>
 						</section>
 						<section class="projectThumbnail">
-							<a href=""><img src="./images/brain_mandelbulb_screenshot.webp" alt="Screenshot of the Brain Mandelbulb reacting to EEG data"/></a>
+							<a href="https://github.com/kiwijuice56/gd-mobile-physiology"><img class="thumbnail" src="./images/gd_mobile_physiology_screenshot.webp" alt="Screenshot of physiological signals and a singing bowl app using this library"/></a>
+						</section>
+					</section>
+
+					<section class="projectBlock fadeIn">
+						<section class="projectHeader">
+							<h3 class="projectTitle"><a href="https://kiwijuice56.github.io/protein-visualizer/">Protein Visualizer</a></h3>
+							<p class="projectTag">MIT Manolis Kellis Lab (2024)</p>
+						</section>
+						<section class="projectDescription">
+							<p>An interactive visualization of biological protein structure and behavior using machine learning. </p>
+						</section>
+						<section class="projectThumbnail">
+							<a href="https://kiwijuice56.github.io/protein-visualizer/"><img src="./images/protein_visualizer_screenshot.webp" alt="Screenshot of the protein visualizer rendering a detailed and colorful protein structure"/></a>
 						</section>
 					</section>
 				</section>
