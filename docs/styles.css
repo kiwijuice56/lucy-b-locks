@@ -235,3 +235,18 @@ footer p {
 		width: 70vw;
 	}
 }
+
+
+@media(min-width: 1920px) {
+	body {
+		font-size: 24px;
+	}
+
+	#aboutMe > p {
+		max-width: 900px;
+	}
+
+	.projectGrid {
+		max-width: 1200px;
+	}
+}
