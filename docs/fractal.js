@@ -21,9 +21,9 @@ uniform vec2  mouse_pos;
 uniform float shimmer_speed;
 uniform float u_time;
  
-const vec3 col_a = vec3(245.0/255.0, 212.0/255.0, 246.0/255.0);
-const vec3 col_b = vec3(240.0/255.0, 197.0/255.0, 238.0/255.0);
-const vec3 col_c = vec3(215.0/255.0, 180.0/255.0, 219.0/255.0);
+const vec3 col_a = vec3(247.0/255.0, 220.0/255.0, 248.0/255.0);
+const vec3 col_b = vec3(240.0/255.0, 203.0/255.0, 238.0/255.0);
+const vec3 col_c = vec3(220.0/255.0, 190.0/255.0, 222.0/255.0);
  
 vec3 color_cell(float mu, vec2 uv) {
     float shimmer_mu = mu + u_time * shimmer_speed;
